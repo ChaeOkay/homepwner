@@ -42,7 +42,7 @@
                     <color key="highlightedColor" white="0.3837890625" alpha="1" colorSpace="calibratedWhite"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TmL-cZ-Pz3">
-                    <rect key="frame" x="0.0" y="67" width="320" height="55"/>
+                    <rect key="frame" x="0.0" y="60" width="320" height="55"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="33"/>
                     <nil key="highlightedColor"/>
@@ -74,18 +74,14 @@
                         <outlet property="delegate" destination="-1" id="TUB-F8-3BQ"/>
                     </connections>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-CW-hXX">
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ewq-CW-hXX">
                     <rect key="frame" x="0.0" y="123" width="320" height="176"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="xYa-qK-XUN" appends="YES" id="ceJ-ha-hco"/>
+                    </connections>
                 </imageView>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdL-bL-xCl">
-                    <rect key="frame" x="0.0" y="436" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" white="0.89834299399999995" alpha="1" colorSpace="calibratedWhite"/>
-                    <items>
-                        <barButtonItem systemItem="camera" id="TyV-0M-72O"/>
-                    </items>
-                </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5F-Ie-o48">
                     <rect key="frame" x="0.0" y="436" width="320" height="44"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -103,5 +99,10 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
+        <tapGestureRecognizer id="xYa-qK-XUN">
+            <connections>
+                <action selector="tapped" destination="-1" id="nag-01-0pb"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>
