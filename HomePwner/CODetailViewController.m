@@ -8,6 +8,7 @@
 
 #import "CODetailViewController.h"
 #import "BNRItem.h"
+#import "COImageStore.h"
 
 @interface CODetailViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
@@ -41,6 +42,10 @@
     UIImage *imageTaken = info[UIImagePickerControllerOriginalImage];
     self.imageView.image = imageTaken;
 
+    COImageStore *images = [COImageStore imageStore];
+    NSString *newImageName = self.item.serialNumber;
+    [images setImage:imageTaken forKey:[newImageName stringByAppendingString:@"IMG"]];
+
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -59,6 +64,14 @@
         date.timeStyle = NSDateFormatterNoStyle;
     }
     self.dateLabel.text = [date stringFromDate:item.dateCreated];
+
+    NSString *imageKey = [self.item.serialNumber stringByAppendingString:@"IMG"];
+
+    UIImage *image = [[COImageStore imageStore] imageForKey:imageKey];
+    if (image)
+    {
+        self.imageView.image = image;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
