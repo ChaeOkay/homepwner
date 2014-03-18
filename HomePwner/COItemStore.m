@@ -7,6 +7,13 @@
 //
 
 #import "COItemStore.h"
+#import "BNRItem.h"
+
+@interface COItemStore ()
+
+@property (nonatomic) NSMutableArray *privateItems;
+
+@end
 
 @implementation COItemStore
 
@@ -30,7 +37,25 @@
 
 - (instancetype)initPrivate
 {
-    return [super init];
+    self = [super init];
+    if (self) {
+        _privateItems = [NSMutableArray new];
+    }
+
+    return self;
+}
+
+- (NSArray *)allItems
+{
+    return [self.privateItems copy];
+}
+
+- (BNRItem *)createItem
+{
+    BNRItem *randomItem = [BNRItem randomItem];
+    [self.privateItems addObject:randomItem];
+
+    return randomItem;
 }
 
 @end

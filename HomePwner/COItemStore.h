@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class BNRItem;
+
 @interface COItemStore : NSObject
 
+@property (nonatomic, readonly) NSArray *allItems;
+
 + (instancetype)shareStore;
+- (BNRItem *)createItem;
 
 @end
