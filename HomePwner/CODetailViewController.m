@@ -7,8 +7,10 @@
 //
 
 #import "CODetailViewController.h"
+#import "BNRItem.h"
 
 @interface CODetailViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
@@ -17,5 +19,22 @@
 @end
 
 @implementation CODetailViewController
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    BNRItem *item = self.item;
+    self.nameField.text = item.itemName;
+    self.serialNumberField.text = item.serialNumber;
+    self.valueField.text = [NSString stringWithFormat:@"%d", item.valueInDollars];
+
+    static NSDateFormatter *date;
+    if (!date){
+        date = [NSDateFormatter new];
+        date.dateStyle = NSDateFormatterMediumStyle;
+        date.timeStyle = NSDateFormatterNoStyle;
+    }
+    self.dateLabel.text = [date stringFromDate:item.dateCreated];
+}
 
 @end

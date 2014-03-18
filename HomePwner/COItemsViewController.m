@@ -23,6 +23,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CODetailViewController *detailView = [CODetailViewController new];
+
+    NSArray *items = COItemStore.sharedStore.allItems;
+    BNRItem *selectedItem = items[indexPath.row];
+    detailView.item = selectedItem;
+
     [self.navigationController pushViewController:detailView animated:YES];
 }
 
