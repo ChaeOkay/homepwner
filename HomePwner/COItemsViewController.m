@@ -9,6 +9,7 @@
 #import "COItemsViewController.h"
 #import "COItemStore.h"
 #import "BNRItem.h"
+#import "CODetailViewController.h"
 
 @interface COItemsViewController () <UITableViewDataSource>
 
@@ -17,6 +18,13 @@
 @end
 
 @implementation COItemsViewController
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CODetailViewController *detailView = [CODetailViewController new];
+    [self.navigationController pushViewController:detailView animated:YES];
+}
 
 // table:numberOfRowsInSection:
 - (NSInteger)tableView:(UITableView *)tableView

@@ -51,6 +51,9 @@
                     <color key="backgroundColor" red="0.91230743219999999" green="0.99785580839999999" blue="0.96069847990000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="nju-oI-q2f"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sya-bE-BKc">
                     <rect key="frame" x="76" y="182" width="217" height="30"/>
@@ -58,6 +61,9 @@
                     <color key="backgroundColor" red="0.91230743219999999" green="0.99785580839999999" blue="0.96069847990000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="BE0-NH-C6z"/>
+                    </connections>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dje-sa-nQV">
                     <rect key="frame" x="76" y="220" width="217" height="30"/>
@@ -65,6 +71,9 @@
                     <color key="backgroundColor" red="0.91230743219999999" green="0.99785580839999999" blue="0.96069847990000001" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TUB-F8-3BQ"/>
+                    </connections>
                 </textField>
             </subviews>
             <color key="backgroundColor" red="0.967577108267206" green="1" blue="0.95940236666125722" alpha="1" colorSpace="calibratedRGB"/>
