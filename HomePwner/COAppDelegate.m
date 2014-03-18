@@ -17,7 +17,11 @@
     // Override point for customization after application launch.
     
     COItemsViewController *itemsViewContoller = [COItemsViewController new];
-    self.window.rootViewController = itemsViewContoller;
+
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:itemsViewContoller];
+
+    self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
