@@ -36,6 +36,14 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *imageTaken = info[UIImagePickerControllerOriginalImage];
+    self.imageView.image = imageTaken;
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
