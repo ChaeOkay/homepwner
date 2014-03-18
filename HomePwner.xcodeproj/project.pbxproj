@@ -23,6 +23,8 @@
 		E0F2563918D8909D00DFB42A /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2563818D8909D00DFB42A /* BNRItem.m */; };
 		E0F2563C18D892A100DFB42A /* COItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2563B18D892A100DFB42A /* COItemStore.m */; };
 		E0F2563E18D8AA2500DFB42A /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F2563D18D8AA2500DFB42A /* HeaderView.xib */; };
+		E0F2564218D8BB1600DFB42A /* CODetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2564018D8BB1600DFB42A /* CODetailViewController.m */; };
+		E0F2564318D8BB1600DFB42A /* CODetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0F2564118D8BB1600DFB42A /* CODetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		E0F2563A18D892A100DFB42A /* COItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COItemStore.h; sourceTree = "<group>"; };
 		E0F2563B18D892A100DFB42A /* COItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COItemStore.m; sourceTree = "<group>"; };
 		E0F2563D18D8AA2500DFB42A /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		E0F2563F18D8BB1600DFB42A /* CODetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CODetailViewController.h; sourceTree = "<group>"; };
+		E0F2564018D8BB1600DFB42A /* CODetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CODetailViewController.m; sourceTree = "<group>"; };
+		E0F2564118D8BB1600DFB42A /* CODetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CODetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +129,9 @@
 				E0F2563B18D892A100DFB42A /* COItemStore.m */,
 				E0F2561418D88B1E00DFB42A /* COAppDelegate.h */,
 				E0F2561518D88B1E00DFB42A /* COAppDelegate.m */,
+				E0F2563F18D8BB1600DFB42A /* CODetailViewController.h */,
+				E0F2564018D8BB1600DFB42A /* CODetailViewController.m */,
+				E0F2564118D8BB1600DFB42A /* CODetailViewController.xib */,
 				E0F2563418D88B7A00DFB42A /* COItemsViewController.h */,
 				E0F2563518D88B7A00DFB42A /* COItemsViewController.m */,
 				E0F2563D18D8AA2500DFB42A /* HeaderView.xib */,
@@ -241,6 +249,7 @@
 				E0F2563E18D8AA2500DFB42A /* HeaderView.xib in Resources */,
 				E0F2561018D88B1E00DFB42A /* InfoPlist.strings in Resources */,
 				E0F2561818D88B1E00DFB42A /* Images.xcassets in Resources */,
+				E0F2564318D8BB1600DFB42A /* CODetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0F2561618D88B1E00DFB42A /* COAppDelegate.m in Sources */,
+				E0F2564218D8BB1600DFB42A /* CODetailViewController.m in Sources */,
 				E0F2563918D8909D00DFB42A /* BNRItem.m in Sources */,
 				E0F2563618D88B7A00DFB42A /* COItemsViewController.m in Sources */,
 				E0F2563C18D892A100DFB42A /* COItemStore.m in Sources */,
