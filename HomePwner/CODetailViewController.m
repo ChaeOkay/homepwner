@@ -9,7 +9,7 @@
 #import "CODetailViewController.h"
 #import "BNRItem.h"
 
-@interface CODetailViewController ()
+@interface CODetailViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
@@ -24,7 +24,16 @@
 
 - (IBAction)takePicture:(id)sender
 {
+    UIImagePickerController *imagePicker = [UIImagePickerController new];
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    } else {
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
 
+    imagePicker.delegate = self;
+    [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
