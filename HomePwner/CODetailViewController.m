@@ -90,4 +90,9 @@
     self.navigationItem.title = item.itemName;
 }
 
+- (IBAction)tapped
+{
+    NSLog(@"tappage!");
+}
+
 @end
