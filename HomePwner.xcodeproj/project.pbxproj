@@ -21,6 +21,7 @@
 		E0F2562B18D88B1E00DFB42A /* HomePwnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2562A18D88B1E00DFB42A /* HomePwnerTests.m */; };
 		E0F2563618D88B7A00DFB42A /* COItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2563518D88B7A00DFB42A /* COItemsViewController.m */; };
 		E0F2563918D8909D00DFB42A /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2563818D8909D00DFB42A /* BNRItem.m */; };
+		E0F2563C18D892A100DFB42A /* COItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F2563B18D892A100DFB42A /* COItemStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E0F2563518D88B7A00DFB42A /* COItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COItemsViewController.m; sourceTree = "<group>"; };
 		E0F2563718D8909D00DFB42A /* BNRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItem.h; sourceTree = "<group>"; };
 		E0F2563818D8909D00DFB42A /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
+		E0F2563A18D892A100DFB42A /* COItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COItemStore.h; sourceTree = "<group>"; };
+		E0F2563B18D892A100DFB42A /* COItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COItemStore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 			children = (
 				E0F2563718D8909D00DFB42A /* BNRItem.h */,
 				E0F2563818D8909D00DFB42A /* BNRItem.m */,
+				E0F2563A18D892A100DFB42A /* COItemStore.h */,
+				E0F2563B18D892A100DFB42A /* COItemStore.m */,
 				E0F2561418D88B1E00DFB42A /* COAppDelegate.h */,
 				E0F2561518D88B1E00DFB42A /* COAppDelegate.m */,
 				E0F2563418D88B7A00DFB42A /* COItemsViewController.h */,
@@ -253,6 +258,7 @@
 				E0F2561618D88B1E00DFB42A /* COAppDelegate.m in Sources */,
 				E0F2563918D8909D00DFB42A /* BNRItem.m in Sources */,
 				E0F2563618D88B7A00DFB42A /* COItemsViewController.m in Sources */,
+				E0F2563C18D892A100DFB42A /* COItemStore.m in Sources */,
 				E0F2561218D88B1E00DFB42A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
